@@ -1,0 +1,36 @@
+{
+	"_comment1" : "Persistent information about a plate reader, to be supplied by TA3",
+	"igem_cytometer_configuration": {
+		"_comment1": "the rdf:about field is a URI that persistently identifies this instrument and optical configuration",
+		"rdf:about": "http://uw.edu/BioFAB/PlateReader1/Config2018-Jan-3",
+
+		"_comment2": "Compatible ETL version, following Semantic Versioning (semver.org).  Note that underspecifying version allows use of backward compatible upgrades.",
+		"tasbe_version": "https://github.com/SD2E/reactors-etl/releases/tag/1",
+
+		"_comment3": "the channels list all of the parameters of interest in plate reader measurement from the instrument",
+		"channels": [{
+				"_comment1": "name must exactly match the column name in the plate data table",
+				"name": "GFP",
+				"_comment2": "excitation is the channel illumination; these examples show the recommended values",
+				"excitation_wavelength": 488,
+				"_comment3": "emission_filter is the channel optical filter; these examples show the recommended values",
+				"emission_filter": {
+					"type": "bandpass",
+					"center": 530,
+					"width": 30
+				},
+				"_comment4": "emission_filter can also be of type 'longpass', which has cutoff instead of center and width"
+			},
+			{
+				"_comment1": "Abs600 is the typical OD proxy measurement; I am not certain about typical filter",
+				"name": "Abs600",
+				"excitation_wavelength": 600,
+				"emission_filter": {
+					"type": "bandpass",
+					"center": 600,
+					"width": 5
+				}
+			}
+		]
+	}
+}

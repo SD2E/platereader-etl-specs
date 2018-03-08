@@ -1,0 +1,40 @@
+{
+	"_comment1": "Table of raw plate reader measurements, to be processed",
+	"tasbe_experimental_data": {
+		"_comment1": "the rdf:about field is a URI that persistently identifies this data collection",
+		"rdf:about": "http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/ExperimentalData",
+		
+		"_comment2": "Compatible ETL version, following Semantic Versioning (semver.org).  Note that underspecifying version allows use of backward compatible upgrades.",
+		"tasbe_version": "https://github.com/SD2E/reactors-etl/releases/tag/1",
+
+		"_comment3": "identifier linking to the instrument and optical configuration used for collecting data",
+		"platereader_configuration": "http://uw.edu/BioFAB/PlateReader1/Config2018-Jan-3",
+		
+		"_comment4": "identifier linking to the process control data set collected for this experiment",
+		"process_control_data": "http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/Controls",
+
+		"_comment5": "map from sample URIs to location and measured values for each channel in the plate reader",
+		"samples": [{
+				"sample": "http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.00.R1",
+				"row": "A",
+				"column" : "1",
+				"Abs600" : 0.062,
+				"GFP" : 4958
+			},
+			{
+				"sample": "http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.00.R2",
+				"row": "A",
+				"column" : "2",
+				"Abs600" : 0.057,
+				"GFP" : 5061
+			},
+			{
+				"sample": "http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.01.R1",
+				"row": "B",
+				"column" : "1",
+				"Abs600" : 0.061,
+				"GFP" : 4876
+			}
+		]
+	}
+}

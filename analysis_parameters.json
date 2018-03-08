@@ -1,0 +1,34 @@
+{
+	"_comment1": "Information linking experiment samples into replicate groups and configuration of processing, to be supplied by TA1/TA2",
+	"igem_analysis_parameters": {
+		"_comment1": "the rdf:about field is a URI that persistently identifies this analysis configuration",
+		"rdf:about": ""http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/Analysis1",
+
+		"_comment2": "Compatible ETL version, following Semantic Versioning (semver.org).  Note that underspecifying version allows use of backward compatible upgrades.",
+		"tasbe_version": "https://github.com/SD2E/reactors-etl/releases/tag/1",
+
+		"_comment3": "identifier linking to the color model for interpreting units.  Should typically be derived from the same process_control_data as is referenced in the experimental_data",
+		"color_model": "http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/ColorModel",
+
+		"_comment4": "identifier linking to the data collection to analyze",
+		"experimental_data": "http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/ExperimentalData",
+
+		"_comment5": "each replicate group collects a set of samples from the experimental collection under a label",
+		"replicate_groups": [{
+				"label": "NOR.00",
+				"samples": ["http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.00.R1",
+					"http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.00.R2"
+				]
+			},
+			{
+				"label": "NOR.01",
+				"samples": ["http://uw.edu/BioFAB/Examples/2018-01-31/Run1/ExperimentalData/NOR.00.R1"]
+			}
+		],
+
+		"_comment6": "additional configuration parameters",
+		"config": {
+			"_comment1": "JSON serialization of arbitrary config parameters, just like from TASBE",
+		},
+	}
+}
