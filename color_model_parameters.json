@@ -2,7 +2,7 @@
 	"_comment1": "Information linking experiment samples into replicate groups and configuration of processing, to be supplied by TA1/TA2",
 	"igem_analysis_parameters": {
 		"_comment1": "the rdf:about field is a URI that persistently identifies this analysis configuration",
-		"rdf:about": ""http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/ColorModel1",
+		"rdf:about": "http://uw.edu/BioFAB/SD2E/2018-01-31/Run1/ColorModel1",
 
 		"_comment2": "Compatible ETL version, following Semantic Versioning (semver.org).  Note that underspecifying version allows use of backward compatible upgrades.",
 		"tasbe_version": "https://github.com/SD2E/reactors-etl/releases/tag/1",
